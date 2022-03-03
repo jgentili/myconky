@@ -1,0 +1,5 @@
+#! /bin/bash
+sleep 15 &&
+exec conky --config=$HOME/.conky/.conkyrc_system &
+exec conky --config=$HOME/.conky/.conkyrc_time &
+exec conky --config=$HOME/.conky/.conkyrc_weather &
