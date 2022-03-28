@@ -1,0 +1,88 @@
+conky.config = {
+    alignment = 'top_left',
+    background = true,
+    border_width = 1,
+    cpu_avg_samples = 2,
+    default_color = 'gray',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    color1 = '#1793d1',
+    color2 = '#E94F37',
+    color3 = '#70E000',
+    color4 = '#F34213',
+    color5 = '#BBB8B2',
+    color6 = '#E3E4DB',
+    color7 = '#AEA4BF',
+    double_buffer = true,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    extra_newline = false,
+    font = 'Roboto Mono:size=8',
+    gap_x = 20,
+    gap_y = 100,
+    minimum_height = 250,
+    minimum_width = 220,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_ncurses = false,
+    out_to_stderr = false,
+    out_to_x = true,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_transparent = true,
+    own_window_argb_visual = true,
+    own_window_type = 'desktop',
+    own_window_hints ='undecorated,sticky,skip_taskbar,skip_pager,below',
+    show_graph_range = false,
+    show_graph_scale = false,
+    stippled_borders = 0,
+    update_interval = 1.0,
+    uppercase = false,
+    use_spacer = 'none',
+    use_xft = true,
+    update_interval = 999.0,
+}
+
+conky.text = [[
+
+${font Noto Sans UI:bold:size=10}${color1}TERMINAL ${color2}${hr 2}
+${color5}${font Noto Sans UI:size=9}${color5}Record Terminal $alignr${color3}rec
+${color5}Netstat $alignr${color3}netl
+${color5}GPG Decrypt $alignr${color3}gpgd
+${color5}GPG Encrypt Email $alignr${color3}gpge
+${color5}GPG Encrypt File $alignr${color3}gpgp
+${color5}System Monitor $alignr${color3}Ctrl-Esc
+${color5}Close $alignr${color3}Alt-F4
+${color5}Force Quit $alignr${color3}Ctrl-Alt-Esc
+${color5}Zoom In/Out $alignr${color3}Meta+ Meta-
+${color5}Switch Desktop $alignr${color3}Ctrl-F1 Ctrl-F2 
+
+${font Noto Sans UI:bold:size=10}${color1}SHELL ${color2}${hr 2}
+${color5}${font Noto Sans UI:size=9}${color5}Show system and kernel $alignr${color3}uname -a
+${color5}Show uptime $alignr${color3}uptime
+${color5}Show username $alignr${color3}whoami
+${color5}Show mounted filesystems $alignr${color3}mount
+
+${font Noto Sans UI:bold:size=10}${color1}NAVIGATION ${color2}${hr 2}
+${color5}${font Noto Sans UI:size=9}${color5}Switch to Workspace 1 $alignr${color3}Ctrl+Super+1
+${color5}Switch to Workspace 2 $alignr${color3}Ctrl+Super+2
+${color5}Switch to Workspace 3 $alignr${color3}Ctrl+Super+3
+${color5}Switch to Workspace 4 $alignr${color3}Ctrl+Super+4
+${color5}Move Up Workspace $alignr${color3}Alt+Super+Up
+${color5}Move Down Workspace $alignr${color3}Alt+Super+Down
+
+${font Noto Sans UI:bold:size=10}${color1}LINUX CHEAT SHEET ${color2}${hr 2}
+${color5}${font Noto Sans UI:size=9}${color5}Creates archive from file 'home' $alignr${color3}tar -cf home.tar home
+${color5}${font Noto Sans UI:size=9}${color5}Extracts archive file 'files.tar' $alignr${color3}tar -xf files.ta
+${color5}${font Noto Sans UI:size=9}${color5}Find file begining with 'index' $alignr${color3}Find /home/ -name “index”
+${color5}${font Noto Sans UI:size=9}${color5}Displays bootup messages $alignr${color3}dmesg
+${color5}${font Noto Sans UI:size=9}${color5}Displays CPU information $alignr${color3}cat /proc/cpuinfo
+${color5}${font Noto Sans UI:size=9}${color5}Displays Memory information $alignr${color3}cat /proc/meminfo
+${color5}${font Noto Sans UI:size=9}${color5}Displays Hardware information $alignr${color3}lshw
+${color5}${font Noto Sans UI:size=9}${color5}Displays USB devices in a tree $alignr${color3}lsusb -tv
+${color5}${font Noto Sans UI:size=9}${color5}Displays information about disks $alignr${color3}hdparm -i /dev/xda
+
+]]
