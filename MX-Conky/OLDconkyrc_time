@@ -1,0 +1,63 @@
+# Conky Time Date Clock
+conky.config = {
+    alignment = 'bottom_left',
+    background = true,
+    border_width = 1,
+    cpu_avg_samples = 2,
+    default_color = 'gray',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+# Dark Moss Green
+    color1 = '#115D00',
+# Mulberry
+    color2 = '#C64191',
+# Atomic Tangerine
+    color3 = '#F79F79',
+# SGBUS Green
+    color4 = '#84DD63',
+# Amaranth Purple
+    color5 = '#AF1B3F',
+    double_buffer = true,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    extra_newline = false,
+    font = 'Roboto Mono:size=8',
+    font1 = 'Hack:size=12',
+font2 = 'Voice of Truth:size=24',
+font3 = 'HUN-din 1451:size=16',
+font4 = 'Stoopid Markers:size=18',
+font5 = 'BlowBrush:size=18',
+font6 = 'Urban Jungle:size=24',
+    gap_x = 100,
+    gap_y = 0,
+    minimum_height = 250,
+    minimum_width = 220,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_ncurses = false,
+    out_to_stderr = false,
+    out_to_x = true,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_transparent = true,
+    own_window_argb_visual = true,
+    own_window_type = 'desktop',
+    own_window_hints ='undecorated,sticky,skip_taskbar,skip_pager,below',
+    show_graph_range = false,
+    show_graph_scale = false,
+    stippled_borders = 0,
+    update_interval = 1.0,
+    uppercase = false,
+    use_spacer = 'none',
+    use_xft = true,
+}
+
+conky.text = [[
+${voffset 10}${font Stoopid Markers:size=50}${color4}${time %A}${color}${font}${voffset -10}
+${voffset 10}${font Urban Jungle:size=42}${time %B} ${time %e}${font}${voffset -10}
+${voffset -10}${font Voice of Truth:size=60}${color3}${time %I:%M %p}${color}${font}${voffset -10}
+
+]]
